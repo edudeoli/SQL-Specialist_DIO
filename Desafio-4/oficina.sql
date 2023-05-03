@@ -32,7 +32,6 @@ create table vehicle(
     Vcategory enum('car','suv','van') not null,
     licencePlate varchar(7),
     constraint unique_licencePlate_vehicle unique (licencePlate),
-    primary key (idClientVehicle),
     constraint fk_vehicle_client foreign key (idClientVehicle) references clients(idClient)
 );
 
@@ -47,9 +46,7 @@ create table Order_of_Service(
 	labor_value float default 0,
     parts_value float default 0,
     total_value float not null,
-    primary key (idOrderMechanic, idOrderVehicle),
     constraint fk_order_of_service_mechanic foreign key (idOrderMechanic) references mechanic(iDmechanic),
     constraint fk_order_of_service_vehicle foreign key (idOrderVehicle) references vehicle(idVehicle)
 );
 
--- drop table order_of_service;
