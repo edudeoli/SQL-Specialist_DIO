@@ -1,1 +1,20 @@
 
+Personalizando acessos com views 
+
+Número de empregados por departamento e localidade 
+
+Lista de departamentos e seus gerentes 
+
+Projetos com maior número de empregados (ex: por ordenação desc) 
+
+Lista de projetos, departamentos e gerentes 
+
+Quais empregados possuem dependentes e se são gerentes 
+
+Privilegios ao user; Criação de usuário gerente que terá acesso as informações de employee e departamento na Company_constraints
+
+Before update statement em Company Constraints
+# Atribuindo aumento de salario para dpt especifico = 1 salary * 1.20
+
+Before delete statement
+# Salvando m outra tabela os employees demitidos
